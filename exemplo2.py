@@ -12,8 +12,8 @@ canvas = tk.Canvas(janela, width=600, height=600, bg="green")
 canvas.pack()
 
 def mudar_cor(event):
-    cores = ["red", "blue", "magenta", "green"]
-    indice = random.randrange(0,4,1)
+    cores = ["red", "blue", "magenta", "green", "purple", "silver"]
+    indice = random.randrange(0,6,1)
     canvas.config(bg=cores[indice])
 
 janela.bind('<Return>',mudar_cor)
